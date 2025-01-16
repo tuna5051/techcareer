@@ -23,4 +23,73 @@ h2 {
 
     color:blue;
     background-color: lightyellow;
+
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid red;
+
+    display: -webkit-box;
+    overflow: hidden !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#parag_2 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px red;
+
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 1.5;
+
+    color:blue;
+    background-color: lightyellow;
+
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 1px solid red;
+
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.div_class {    
+    border: 3px solid blue;
+
+    /* 
+    margin settings
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; 
+    margin: 10px 20px 30px 40px;
+    */
+
+    margin: 50px 100px;
+
+    /* margin settings also applies to padding */
+
+    padding: 20px 30px;
+
+    /*margin settings also applies to box-shadow */
+
+    box-shadow: 1px 1px 5px 5px red;
+
+    /*margin settings also applies to border-radius */
+
+    border-radius: 50%;
+
+    text-align: center;
+
+
 }
