@@ -1,5 +1,10 @@
 /* External CSS file */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*width and height includes padding and border but not margin*/
+}
 h2 {
     color:red;
     background-color: lightgray;
@@ -93,3 +98,59 @@ h2 {
 
 
 }
+
+.div_common{
+
+    height: 100px;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 2rem;
+    box-shadow: 1px 10px 1px 10 px rgba(0, 0, 0, 0.7);
+
+}
+
+.div_color {
+
+    color: white;
+    background-color: black;
+
+
+}
+.a_link {
+
+    color: red;
+    background-color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px red;
+    padding: 0.4rem;
+    /* display: none; hide the link entirely*/
+    /*visibility: hidden; hide the link but keep the place empty*/
+
+     
+
+}
+
+.a_link:hover {
+
+    color: black;
+    background-color: red;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px red;
+    padding: 0.4rem;
+
+}
+
+.hide {
+
+    display: none;
+
+}
+
