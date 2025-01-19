@@ -11,8 +11,19 @@ h2 {
 
 }
 
+/* root */
+
+:root {
+    --main-color: red;
+    --main-bg-color: black;
+}
+
 html {
-    font-size: 10px;   
+    font-size: 30px;   
+    /*color: white;
+    background-color: black;*/
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
 }
 body {
     padding: 0 10;
@@ -209,4 +220,65 @@ table td, table th {
 table td:hover{
     background-color: red;
     color: black;
+}
+
+/* selector */
+/* p {
+    color: red;
+    background-color: beige;
+} */
+
+/* div> p {
+    color: red;
+    background-color: green;
+}
+
+div>p::before {
+    content: "Division ";
+    color: purple;
+}
+
+p:nth-child(odd){
+    color: yellow;
+    background-color: beige;
+} */
+
+div~p {
+    color: cyan;
+    background-color: yellow;
+}
+
+div+p {
+    color: blue;
+    background-color: yellow;
+}
+
+/* flexbox */
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 10px;
+}
+.flex_item{
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px red;
+}
+.flex_item:hover {
+    background-color: lightgreen;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px red;
+    padding: 0.4rem;
 }
