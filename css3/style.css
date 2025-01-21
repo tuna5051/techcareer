@@ -282,3 +282,81 @@ div+p {
     text-shadow: 2px 2px 5px red;
     padding: 0.4rem;
 }
+
+/* RD */
+
+.my_responsive {
+ 
+    border: 1px solid yellow;
+    display: inline-block;
+    height: 100px;
+    width: 24%;
+    background-color: lightblue; 
+    width: 19%;
+}
+
+@media screen and (max-width: 910px) {
+    .my_responsive {
+        width: 100%;
+        background-color: yellow;
+        margin-bottom: 10px;
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .my_responsive {
+        width: 100%;
+        background-color: blue;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+#transaction_button {
+    color: white;
+    background-color: black;
+    padding: 0.4rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px red;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+#transaction_button:hover {
+    color: black;
+    background-color: red;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px red;
+    padding: 0.4rem;
+    transform: rotate(360deg);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#header_id{
+    background-image: url('../img/dog_cat.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    /* object-fit: cover; */
+    height: 90vh;
+}
+
+.gradient1 {
+    background: linear-gradient(45deg, red, yellow);
+    width: 90%;
+    height: 100px;
+
+}
